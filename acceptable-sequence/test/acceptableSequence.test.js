@@ -14,4 +14,8 @@ describe('Acceptable Sequence Test', () => {
     const checkSequence = acceptableSequence('lmnop');
     assert.deepEqual(checkSequence, false);
   });
+  it('should return false for "+s+==+l+===e+"', () => {
+    const checkSequence = acceptableSequence('lmnop');
+    assert.deepEqual(checkSequence, false);
+  });
 })
