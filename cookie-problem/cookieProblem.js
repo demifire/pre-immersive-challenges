@@ -29,8 +29,6 @@ module.exports = function cookieProblem(array) {
     if(array[i]>prev){
       newArr[0] = array[i];
       prev = array[i];
-    }else{
-      prev = array[i];
     };
   };
   for(var i=0;i<array.length;i++){
@@ -44,3 +42,4 @@ module.exports = function cookieProblem(array) {
   }
   return boom;
 };  
+
